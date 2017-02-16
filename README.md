@@ -1,24 +1,18 @@
-# README
+# RTR LINKR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An application to shorten links and redirect them, while tracking the usage
+of each link.
 
-Things you may want to cover:
+Any user can enter a URL. The application will generate a unique slug for
+each link. The application will redirect those unique links to the original
+URL and track the usage..
 
-* Ruby version
+The `root_url` would be changed to `rtr.co` in a production environment.
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#Setup
+*  Clone down the repo
+* `bundle install`
+*  Make sure postgres is running
+*  Run migrations
+*  Start the server with `rails s` 
