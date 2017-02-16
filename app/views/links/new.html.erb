@@ -1,9 +1,11 @@
 <h1>Shorten a Link</h1>
 
 <% if @link.errors.any? %>
-  <% @link.errors.each do |error| %>
-    <%= error.message %>
-  <% end %>
+  <ul>
+    <% @link.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
 <% end %>
 
 <%= form_for @link do |f| %>
