@@ -1,0 +1,15 @@
+<table class="table">
+  <tr>
+    <th>Redirect</th>
+    <th>Original URL</th>
+    <th>Count</th>
+  </tr>
+  <% @links.each do |link| %>
+    <tr>
+      <td><%= root_url + link.slug %></td>
+      <td><%= link.url %></td>
+      <td><%= link.redirect_events.count %></td>
+    </tr>
+  <% end %>
+</table>
+
